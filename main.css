@@ -1,0 +1,320 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+a {
+    color:inherit;
+    text-decoration: none;
+}
+*{
+    box-sizing: border-box;
+}
+body {
+    padding-top: 84px;
+}
+.nav-link {
+    position: absolute;
+    top: -84px;
+}
+.container {
+    position: relative;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-top: 48px;
+}
+.header {
+    height: 84px;
+    background-color: #007765;
+    padding-left: 54px;
+    padding-right: 54px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.header_burger {
+    display: none;
+
+}
+.header_logo {
+    margin-top: 0;
+}
+.header_content {
+    display: flex;
+    justify-content: space-between;
+    height: 84px;
+}
+.header_menu {
+    display: flex;
+}
+.header_link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 84px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    margin-right: 8px;
+
+}
+.mobile_nav {
+    display: none;
+}
+.intro{
+    background:url("img/intro_background.png") no-repeat center;
+    height: 403px;
+    width: 100%;
+    background-size: 100% 100%;
+    display: grid;
+    align-items: center;
+}
+.intro_text {
+    color: #FFFFFF;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    text-align: center;
+}
+.problem_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #007765;
+    margin-bottom: 16px;
+}
+.problem_main {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+
+ }
+ .problem {
+    background: #EEEEEE;
+    padding-bottom: 92px;
+    position: relative;
+ }
+.network{
+    background: url("img/network.png") no-repeat center;
+    background-size: 100% 100%;
+    display: grid;
+    align-items: center;
+    height: 483px;
+}
+ .network_text {
+     max-width: 893px;
+     margin: auto;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    
+    color: #FFFFFF;
+    
+ }
+ .coin_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    
+    text-align: center;
+    
+    color: #007765;
+    margin-bottom: 16px;
+ }
+ .coin {
+     padding-bottom: 92px;
+     
+ }
+ .coin_main {
+     margin: 0 auto;
+     max-width: 1110px;
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 32px;
+     line-height: 38px;
+     
+     color: #000000;
+     
+ }
+ .coin_img {
+     float: left;
+     width: 115px;
+     height: 115px;
+     margin-right: 48px;
+ }
+ .coin_text2 {
+    
+    margin-top: 40px ;
+    
+ }
+ .team {
+     background-color: #E5E5E5;
+     padding-bottom: 94px;
+
+ }
+ .team_header {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    /* identical to box height */
+    
+    text-align: center;
+    
+    color: #007765;
+    margin-bottom: 32px;
+ }
+ .team_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px ;
+    max-width: 1110px;
+    margin:0 auto;
+ }
+ .team_card {
+    display: grid;
+    place-items: center;
+    padding: 24px 0;
+ }
+ .team_card_inner {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+ .team_desc {
+     text-align: center;
+     margin-top: 12px;
+ }
+ .team_name {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #007765;
+    
+ }
+ .team_role {
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    
+    color: #000000;
+    
+ }
+ .team_photo {
+     margin: 0 auto;
+ }
+ .footer {
+     width: 100%;
+     height: 176px;
+     background-color: #333333;
+     display:grid;
+     place-items: center;
+ }
+.footer_inner {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+
+    color: #FFFFFF;     
+    max-width: 540px;
+}
+@media screen and (max-width:767px){
+    .header {
+        padding: 0 10px;
+        color: #FFFFFF;
+    }
+    .header_menu {
+        display: none;
+    }
+    .header_burger {
+        display: block;
+        height: 50px;
+        width: 50px;
+        align-self: center;
+        color: #FFFFFF;
+        transition: all 1s;
+    }
+    .header_burger__active {
+        transform: rotate(90deg);
+    }
+    .header_content {
+        justify-content: space-between;
+    }
+    .mobile_nav {
+        z-index: 90;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100vw;
+        height: 100vh;
+        padding-bottom: 84px;
+        background-color: #007765;
+        position: fixed;
+        top: -100vh;
+        left: 0px;
+        transition: all 1s;
+    }
+    .mobile_nav__active{
+        top: 84px;
+    }
+    .mobile_nav_link {
+        font-size: 36px;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 24px;
+    }
+    .coin_header {
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .coin_main {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .network_text {
+        font-size: 32px;
+        padding: 0 5px;
+    }
+    .team_card {
+        grid-column: 1/4;
+    }
+    
+}
