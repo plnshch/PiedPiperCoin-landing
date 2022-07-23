@@ -150,18 +150,8 @@
                     All other trademarks and copyrights are the property of their respective owners. Use of these names, trademarks and brands does not imply endorsement.
                 </div>
             </div>
-            <script>
-                const nav=document.querySelector(".mobile_nav");
-                const burger=document.querySelector(".header_burger");
-                const onBurgerToggle=()=>{
-                    burger.classList.toggle ("header_burger__active");
-                    nav.classList.toggle("mobile_nav__active");
-                }
-                burger.addEventListener("click",onBurgerToggle);
-                const navLinks=nav.querySelectorAll(".mobile_nav_link");
-                navLinks.forEach(link=>{
-                    link.addEventListener("click",onBurgerToggle);
-                })
+            <script src="main.js"> 
+                
             </script>
         </body>
         </html>
